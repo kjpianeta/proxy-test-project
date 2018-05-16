@@ -1,6 +1,7 @@
 ## proxy-test-project
-The proxy-test-project proxies http requests to provided upstream targets via WebAPI.
-It's a Node.js based project. It also relies on NGINX to serve as a front facing proxy for the WepAPI.
+The proxy-test-project proxies http requests, to provided upstream targets, via WebAPI.
+It's a Node.js project. It also relies on NGINX to serve as a front facing proxy for the WepAPI and
+Docker for portability.
 
 ##### Requirements
 This project requires:
@@ -49,7 +50,7 @@ Expected JSON content returned by /proxy/stats WebAPI
 ```
 ##### Test
 The project also includes integration test with mocked endpoints.
-Test suite is based on the [mocha](https://mochajs.org/) framework. Target endpoint mocks
+The test suite is based on the [mocha](https://mochajs.org/) framework. Target endpoint mocks
 are provided by [node-nock](https://github.com/node-nock/nock). The node-nock framework
 allows intercepting requests at the Node.js application level.
 
