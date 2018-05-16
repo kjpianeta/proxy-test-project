@@ -1,0 +1,28 @@
+{
+  "name": "proxyapp",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Test project",
+  "author": "Kenneth Pianeta <kjpianeta@gmail.com>",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "./node_modules/mocha/bin/mocha --exit --ui bdd"
+  },
+  "dependencies": {
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "lodash": "^4.17.10",
+    "morgan": "~1.9.0",
+    "request": "^2.85.0",
+    "root-require": "^0.3.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.1.1",
+    "nock": "^9.2.6",
+    "superagent": "^3.8.3",
+    "supertest": "^3.1.0"
+  }
+}

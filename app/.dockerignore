@@ -1,0 +1,9 @@
+node_modules
+nginx/etc
+docker-compose.yml
+nginx/Dockerfile.nginx
+app/Dockerfile.proxyapp
+README.md
+.gitignore
+.git
+.DS_Store

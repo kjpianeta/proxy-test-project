@@ -1,0 +1,16 @@
+version: "2"
+services:
+  nginxproxy:
+    build:
+      context: .
+      dockerfile: nginx/Dockerfile.nginx
+    ports:
+      - "9000:9000"
+    links:
+      - proxyapp
+  proxyapp:
+    build:
+      context: .
+      dockerfile: app/Dockerfile.proxyapp
+    environment:
+      PORT: "3000"
