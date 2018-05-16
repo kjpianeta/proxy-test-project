@@ -1,5 +1,6 @@
 ## proxy-test-project
-The proxy-test-project proxies http requests, to provided upstream targets, via WebAPI.
+The proxy-test-project proxies http requests, to provided upstream targets, via a WebAPI.It also provides statistics of 
+target requests via another WebAPI.
 It's a Node.js project. It also relies on NGINX to serve as a front facing proxy for the WepAPI and
 Docker for portability.
 
